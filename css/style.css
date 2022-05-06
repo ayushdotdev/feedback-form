@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Overpass:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.button{
+    background-color: hsl(25, 97%, 53%);
+    display: block;
+    width: 100%;
+    border:none;
+    padding: 1rem;
+    color:hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.button:hover{
+    background-color:hsl(0, 0%, 100%);
+    color:hsl(25, 97%, 53%);
+}
+h2,h3{
+    color:hsl(0, 0%, 100%);
+}
+.container{
+    height: 100vh;
+    padding: 10rem 1.5rem;
+}
+.card,.secondPage.display{
+    background-image:  linear-gradient(180deg,hsl(213, 19%, 18%),hsl(216, 12%, 8%));
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+}
+.card{
+    gap:1.5rem;
+}
+.secondPage{
+    display: none;
+}
+.card.submitted{
+display: none;
+}
+
+.card-ratings{
+    display: flex;
+    justify-content: space-between;
+}
+.card-rating{
+    background-color:  hsl(213, 19%, 18%);
+    width:3rem;
+    height:3rem;
+    color:hsl(0, 0%, 100%);
+    display: grid;
+    place-content: center;
+    border-radius: 40px;
+    cursor: pointer;
+    user-select: none;   
+}
+.card-rating:hover
+{
+    background-color: hsl(216, 12%, 54%);
+}
+.card-rating:hover.logo{
+    background-color:  hsl(213, 19%, 18%);
+    cursor: default;
+}
+.card-paragraph,.thank-you-paragraph{
+    color:hsl(217, 12%, 63%);
+}
+.card-rating:focus{
+    background-color:  hsl(25, 97%, 53%);
+}
+
+.secondPage.display{
+    
+    
+    align-items: center;
+    text-align: center;
+    gap:1rem;
+   
+}
+
+.illustration-logo{
+    max-width: 100%;
+}
+.data-selected{
+    background-color:  hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    padding:.3rem 1rem;
+    border-radius: 2rem;
+}
